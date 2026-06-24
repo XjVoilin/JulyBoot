@@ -98,6 +98,9 @@ namespace JulyBoot
     [Serializable]
     public class TipConfig
     {
+        [Tooltip("Tip 预制体资源路径")]
+        public string TipPrefabPath = "UITipItem";
+
         [Tooltip("Tip 对象池最大数量")]
         public int PoolMaxSize = 10;
         
