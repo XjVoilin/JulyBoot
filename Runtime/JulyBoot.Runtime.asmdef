@@ -1,0 +1,17 @@
+{
+    "name": "JulyBoot.Runtime",
+    "rootNamespace": "JulyBoot",
+    "references": [
+        "UniTask",
+        "JulyCommon.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
