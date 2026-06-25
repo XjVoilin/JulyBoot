@@ -1,6 +1,6 @@
 {
   "name": "com.july.boot",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "displayName": "JulyBoot",
   "description": "July 框架 L1 装配层：启动管线 (JulyGameEntry/LaunchPipeline/ILaunchStep)、FrameworkConfig、热更注册入口 IHotUpdateRegistrar",
   "unity": "2021.3",
