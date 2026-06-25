@@ -1,3 +1,4 @@
+using System.Threading;
 using Cysharp.Threading.Tasks;
 
 namespace JulyBoot
@@ -5,6 +6,6 @@ namespace JulyBoot
     public interface ILaunchStep
     {
         string Name { get; }
-        UniTask<bool> ExecuteAsync(LaunchContext ctx);
+        UniTask<bool> ExecuteAsync(CancellationToken ct);
     }
 }

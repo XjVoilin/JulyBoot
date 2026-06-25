@@ -7,10 +7,6 @@ namespace JulyBoot
 {
     public abstract class JulyGameEntry : MonoBehaviour
     {
-        [Header("框架配置文件")]
-        [SerializeField]
-        protected FrameworkConfig frameworkConfig;
-
         private bool _isInit;
 
         protected bool IsInitialized => _isInit;
@@ -25,12 +21,10 @@ namespace JulyBoot
         {
             try
             {
-                var ctx = new LaunchContext(frameworkConfig, destroyCancellationToken);
-
                 var pipeline = new LaunchPipeline();
                 ConfigurePipeline(pipeline);
 
-                if (await pipeline.ExecuteAsync(ctx))
+                if (await pipeline.ExecuteAsync(destroyCancellationToken))
                 {
                     _isInit = true;
                     JLogger.Log("[Launch] Complete");
