@@ -36,7 +36,7 @@ namespace JulyBoot
     }
     /// <summary>
     /// 框架配置 ScriptableObject
-    /// 用于声明式配置 Provider 和 Module 的注册
+    /// 启动期值对象，由 JulyDI 注册供各 System 读取
     /// </summary>
     [CreateAssetMenu(fileName = "FrameworkConfig", menuName = "JulyGF/Framework Config", order = 0)]
     public class FrameworkConfig : ScriptableObject
