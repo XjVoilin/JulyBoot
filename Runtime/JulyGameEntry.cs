@@ -44,15 +44,7 @@ namespace JulyBoot
 
         protected virtual void OnDestroy()
         {
-            try
-            {
-                JulyDI.Clear();
-                JLogger.Log("[Launch] Framework shutdown");
-            }
-            catch (Exception ex)
-            {
-                JLogger.LogException(ex);
-            }
+            JulyDI.Clear();
         }
     }
 }
